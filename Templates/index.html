@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Par ou Ímpar</title>
+</head>
+<body>
+    <h1>Verificar Par ou Ímpar</h1>
+    <form action="/verificar" method="post">
+        <label for="numero">Digite um número:</label>
+        <input type="number" id="numero" name="numero" required>
+        <button type="submit">Verificar</button>
+    </form>
+    <div id="resultado">
+        {% if resultado %}
+            {{ resultado }}
+        {% endif %}
+    </div>
+</body>
+</html>
